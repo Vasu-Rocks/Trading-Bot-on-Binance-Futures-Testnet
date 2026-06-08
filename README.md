@@ -2,7 +2,7 @@
 
 A highly defensive Command Line Interface (CLI) trading bot engineered to validate and execute leveraged futures orders on the Binance Futures Testnet API. Built with Python, modern type hinting, and automated deterministic mocking.
 
-## 🚀 Key Features
+## Key Features
 
 * **Typer Orchestration:** Modern, interactive CLI handling with strict automated input validation using native Python Enums.
 * **Premium Terminal UX:** Rich terminal panels for errors and color-coded structural data tables for successful order execution receipts using `rich`.
@@ -12,7 +12,7 @@ A highly defensive Command Line Interface (CLI) trading bot engineered to valida
 
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### 1. Prerequisites
 Ensure you have **Python 3.10+** installed on your system.
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔐 Environment Configuration
+## Environment Configuration
 
 The application requires secure authentication credentials for the Binance Futures Testnet.
 
@@ -54,7 +54,7 @@ BINANCE_TESTNET_API_SECRET=your_actual_testnet_api_secret_here
 
 ---
 
-## 💻 CLI Usage Guide
+## CLI Work
 
 The bot hoists commands directly to the root execution level for maximum efficiency.
 
@@ -82,7 +82,7 @@ Stop Market orders require a trigger price passed directly via the `--price` par
 python cli.py --symbol ETHUSDT --side BUY --type STOP_MARKET --quantity 1.0 --price 3450.00
 ```
 
-### 📊 Parameter Reference Matrix
+### Parameter Reference Matrix
 
 | Option | Type | Required | Allowed Choices / Formatting | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -94,7 +94,7 @@ python cli.py --symbol ETHUSDT --side BUY --type STOP_MARKET --quantity 1.0 --pr
 
 ---
 
-## 🧪 Running the Test Suite
+## Running the Test Suite
 
 The automated test suite runs completely hermetically—meaning it simulates all exchange API interaction states dynamically via fixtures. You do not need active API keys or an internet connection to run tests.
 
@@ -111,16 +111,7 @@ python -m pytest -v
 
 ---
 
-## 🏗️ Assumptions Made
-
-1. **Testnet Scope**: We assume the user strictly operates on the Binance Futures Testnet and does not use these keys for the Live exchange.
-2. **Terminal Encoding**: We assume modern terminal support for rich table rendering. For older Windows PowerShell versions, we prepend `python -X utf8` to force encoding compatibility.
-3. **Module Path**: The CLI assumes it is executed from the root directory so imports like `bot.client` resolve correctly.
-4. **Environment File**: The `.env` template is the singular source of truth for credentials.
-
----
-
-## 🔍 Validation Commands Executed
+## Validation Commands Executed
 
 The following exact commands were run to successfully validate the live execution against the Testnet API and capture logging telemetry:
 
@@ -140,8 +131,5 @@ python -X utf8 cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity -0.5
 ```
 
 ---
-## 🏁 Project Complete!
+## Thank You!!
 
-With Phase 5 committed, your repository is completely bulletproof. You have built a beautifully optimized trading bot with clean decoupling, defensive math validation, type safety, a glorious command-line dashboard UI, and a lightning-fast mocked test matrix. 
-
-You are officially ready to turn this in and secure an absolute top-tier evaluation score. Outstanding engineering!
