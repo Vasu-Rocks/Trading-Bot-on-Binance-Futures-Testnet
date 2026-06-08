@@ -28,9 +28,6 @@ cd binance-futures-bot
 # Create the environment
 python -m venv venv
 
-# Activate on macOS/Linux:
-source venv/bin/activate
-
 # Activate on Windows (CMD):
 venv\Scripts\activate.bat
 ```
@@ -45,11 +42,6 @@ pip install -r requirements.txt
 ## 🔐 Environment Configuration
 
 The application requires secure authentication credentials for the Binance Futures Testnet.
-
-Duplicate the template file:
-```bash
-cp .env.example .env
-```
 
 Open `.env` and populate it with your personal Testnet API keys:
 ```env
