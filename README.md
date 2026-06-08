@@ -1,6 +1,6 @@
 # Binance Futures Testnet Trading Bot
 
-A production-ready, highly defensive Command Line Interface (CLI) trading bot engineered to validate and execute leveraged futures orders on the Binance Futures Testnet API. Built with Python, modern type hinting, and automated deterministic mocking.
+A highly defensive Command Line Interface (CLI) trading bot engineered to validate and execute leveraged futures orders on the Binance Futures Testnet API. Built with Python, modern type hinting, and automated deterministic mocking.
 
 ## 🚀 Key Features
 
