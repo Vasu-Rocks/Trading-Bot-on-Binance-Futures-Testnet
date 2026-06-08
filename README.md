@@ -111,7 +111,7 @@ python -m pytest -v
 
 ---
 
-## 🏗️ Assumptions Made
+## Assumptions Made
 
 1. **Testnet Scope**: We assume the user strictly operates on the Binance Futures Testnet and does not use these keys for the Live exchange.
 2. **Terminal Encoding**: We assume modern terminal support for rich table rendering. For older Windows PowerShell versions, we prepend `python -X utf8` to force encoding compatibility.
