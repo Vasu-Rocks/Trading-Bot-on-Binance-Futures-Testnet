@@ -111,6 +111,15 @@ python -m pytest -v
 
 ---
 
+## 🏗️ Assumptions Made
+
+1. **Testnet Scope**: We assume the user strictly operates on the Binance Futures Testnet and does not use these keys for the Live exchange.
+2. **Terminal Encoding**: We assume modern terminal support for rich table rendering. For older Windows PowerShell versions, we prepend `python -X utf8` to force encoding compatibility.
+3. **Module Path**: The CLI assumes it is executed from the root directory so imports like `bot.client` resolve correctly.
+4. **Environment File**: The `.env` template is the singular source of truth for credentials.
+
+---
+
 ## Validation Commands Executed
 
 The following exact commands were run to successfully validate the live execution against the Testnet API and capture logging telemetry:
